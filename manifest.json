@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Example plugin manifest",
+  "description": "Example plugin manifest for the compose message headers",
+  "version": "1.0.0",
+  "author": "Christian Gruemme",
+  "applications": {
+    "gecko": {
+      "id": "experiment@sample.extensions.thunderbird.net"
+    }
+  },
+  "permissions": [
+      "compose",
+      "messagesRead"
+  ],
+  "experiment_apis": {
+    "composeMessageHeaders": {
+      "schema": "api/compose_message_headers/schema.json",
+      "parent": {
+        "scopes": [
+          "addon_parent"
+        ],
+        "paths": [
+          [
+            "composeMessageHeaders"
+          ]
+        ],
+        "script": "api/compose_message_headers/implementation.js"
+      }
+    }
+  }
+}
