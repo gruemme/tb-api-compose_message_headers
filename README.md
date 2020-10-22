@@ -6,10 +6,6 @@ There are the following functions:
 
 * `browser.composeMessageHeaders.addComposeHeader(tabId, headerName, headerValue)` Sets the header with name *headerName* with the value *headerValue* in the message inside the *tabId*
 * `browser.composeMessageHeaders.deleteComposeHeader(tabId, headerName)` Deletes the headerline of header with name *headerName* in the message inside the *tabId*
-* `browser.composeMessageHeaders.hasComposeHeader(tabId, headerName)` If header with name *headerName* is present in the message inside the *tabId*
-* `browser.composeMessageHeaders.getComposeHeader(tabId, headerName)` Gets the value of header with name *headerName* in the message inside the *tabId*
-
-
 
 Example usage:
 ```
@@ -36,4 +32,3 @@ browser.tabs.query({
   input.addEventListener("change", () => setMyHeaderValue(event, tabId)) ;
 });
 ```
-

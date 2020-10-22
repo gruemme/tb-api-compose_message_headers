@@ -25,14 +25,6 @@ var composeMessageHeaders = class extends ExtensionCommon.ExtensionAPI {
           realTabWindow.gMsgCompose.compFields.deleteHeader(headerName);
           console.log("Removed " + headerName + " from message headers");
         },
-        hasComposeHeader(tabId, headerName) {
-          let realTabWindow = getTabWindowFromTabId(tabId);
-          return realTabWindow.gMsgCompose.compFields.hasHeader(headerName);
-        },
-        getComposeHeader(tabId, headerName) {
-          let realTabWindow = getTabWindowFromTabId(tabId);
-          return realTabWindow.gMsgCompose.compFields.getHeader(headerName);
-        },
       },
     };
   }

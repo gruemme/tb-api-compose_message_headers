@@ -40,40 +40,6 @@
             "description": "Header name to remove."
           }
         ]
-      },
-      {
-        "name": "hasComposeHeader",
-        "type": "function",
-        "description": "Checks if given message header is present in current message.",
-        "parameters": [
-          {
-            "name": "tabId",
-            "type": "integer",
-            "description": "TabId to the tab with the message to check."
-          },
-          {
-            "name": "headerName",
-            "type": "string",
-            "description": "Header name to check."
-          }
-        ]
-      },
-      {
-        "name": "getComposeHeader",
-        "type": "function",
-        "description": "Remove given message header from current message.",
-        "parameters": [
-          {
-            "name": "tabId",
-            "type": "integer",
-            "description": "TabId to the tab with the message to remove the message header from."
-          },
-          {
-            "name": "headerName",
-            "type": "string",
-            "description": "Header name to remove."
-          }
-        ]
       }
     ],
     "events": [ ]
